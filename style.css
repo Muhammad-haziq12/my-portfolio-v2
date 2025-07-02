@@ -94,7 +94,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    height: 56px;
+    padding-top: 8px;
+padding-bottom: 8px;
+
     padding: 0 16px 0 32px;
     border: 1px solid var(--neutral-100);
     border-radius: 999px;
@@ -211,7 +214,8 @@ body {
 
 /* start: Hero */
 .hero-section {
-    overflow: hidden;
+   /*  overflow: hidden;*/
+   padding-top: 100px;
 }
 .hero-wrapper {
     display: grid;
