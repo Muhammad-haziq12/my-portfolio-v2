@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Haziq/zi/haziq/portfolio-website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PORTOFOLIODEPLOY"
+	}
+}
