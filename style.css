@@ -445,7 +445,7 @@ padding-bottom: 8px;
     color: var(--neutral-500);
     font-size: 20px;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 12;
     -webkit-box-orient: vertical;
     line-clamp: 2;
     overflow: hidden;
