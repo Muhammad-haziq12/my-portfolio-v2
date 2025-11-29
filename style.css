@@ -343,17 +343,22 @@ padding-bottom: 8px;
 }
 .partner-box {
     background-color: var(--neutral-900);
-    border-radius: 16px;
-    padding: 48px;
+    border-radius: 80px;
+    padding: 64px 48px;
+   
 }
+
 .partner-title {
     color: var(--white);
 }
 .partner-image {
     margin-top: 24px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 32px 48px; /* vertical / horizontal */
+    justify-items: center; /* centre horizontal */
 }
+
 .partner-image-item {
     max-width: 80px;
     max-height: 80px;
