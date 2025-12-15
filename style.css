@@ -486,11 +486,14 @@ padding-bottom: 8px;
 .project-section {
     padding: 64px 0;
 }
-.project-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+.project-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 48px;
 }
+
 .project-title {
     margin-bottom: 16px;
 }
@@ -653,3 +656,143 @@ footer {
     }
 }
 /* end: Breakpoints */
+
+
+
+/* ===== PROJECT CARDS (UNIFIED) ===== */
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+/* card */
+.project-card {
+  width: 420px;
+  min-height: 460px;
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 24px;
+
+  padding: 28px 24px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  /* ✨ SMOOTH */
+  transition:
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* logo wrapper (same height for every card) */
+.project-card-media {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.project-card-media img {
+  max-height: 180px;
+  max-width: 320px;
+  object-fit: contain;
+}
+
+
+/* badge */
+.project-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #444;
+  background: #f2f2f2;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin: 0 auto 14px;
+}
+
+/* title */
+.project-card h3 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+/* tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+
+.project-tags span {
+  font-size: 13px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #f6f6f6;
+  color: #333;
+  font-weight: 600;
+}
+
+/* description */
+.project-points {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.project-points li {
+  font-size: 15px;
+  color: #5a5a5a;
+  margin-bottom: 8px;
+}
+
+/* push buttons to bottom always */
+.project-card-body {
+  margin-top: 6px;
+  flex: 1;
+}
+
+.project-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 575px) {
+  .project-card {
+    width: 100%;
+    min-height: auto;
+  }
+  .project-card-media {
+    height: 140px;
+  }
+}
